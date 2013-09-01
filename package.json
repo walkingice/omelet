@@ -16,6 +16,8 @@
     "jade": "~0.33",
     "brunch": "~1.7",
 
+    "express": "3.1.x",
+
     "javascript-brunch": ">= 1.0 < 1.8",
 
     "css-brunch": ">= 1.0 < 1.8",
