@@ -25,5 +25,13 @@ angular.module('twControllers', [])
 			$scope.items = data.list;
 		}
 	});
+}).controller('FooCtrl', function ($scope, $http) {
+	$http({
+		method: 'GET',
+		url: '/data/foo.json'
+	}).success(function (data, status, headers, config) {
+		$scope.title = data.title;
+		$scope.desc = data.description;
+	});
 });
 

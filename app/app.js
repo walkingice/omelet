@@ -14,8 +14,8 @@ App.config([
 	'$routeProvider', '$locationProvider', function($routeProvider, $locationProvider, config) {
 		$routeProvider.when('/list', {
 			templateUrl: '/partials/list.html'
-		}).when('/view1', {
-			templateUrl: '/partials/partial1.html'
+		}).when('/foo', {
+			templateUrl: '/partials/foo.html'
 		}).when('/about', {
 			templateUrl: '/partials/about.html'
 		}).otherwise({
