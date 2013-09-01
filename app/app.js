@@ -1,7 +1,14 @@
 'use strict';
 var App;
 
-App = angular.module('app', ['ngCookies', 'ngResource', 'app.controllers', 'app.directives', 'app.filters', 'app.services', 'partials']);
+App = angular.module('twoffline', ['ngCookies',
+                                       'ngResource',
+                                       'twControllers',
+                                       'twDirectives',
+                                       'twFilters',
+                                       'twServices',
+                                       'partials'
+                                   ]);
 
 App.config([
 	'$routeProvider', '$locationProvider', function($routeProvider, $locationProvider, config) {

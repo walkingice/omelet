@@ -1,6 +1,7 @@
 'use strict';
 /* Sevices*/
 
-angular.module('app.services', []).factory('version', function() {
+angular.module('twServices', [])
+.factory('version', function() {
 	return "0.1";
 });
