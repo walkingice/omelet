@@ -9,7 +9,8 @@
     "url": ""
   },
   "scripts": {
-    "start": "node_modules/.bin/brunch watch --server"
+    "start": "./node_modules/.bin/brunch watch --server",
+    "postinstall": "scripts/postinstall.sh"
   },
   "dependencies": {
     "jade": "~0.33",
