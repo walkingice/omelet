@@ -7,20 +7,24 @@ App = angular.module('twoffline', ['ngCookies',
                                        'twDirectives',
                                        'twFilters',
                                        'twServices',
+                                       'ui.state',
                                        'partials'
                                    ]);
 
-App.config([
-	'$routeProvider', '$locationProvider', function($routeProvider, $locationProvider, config) {
-		$routeProvider.when('/list', {
-			templateUrl: '/partials/list.html'
-		}).when('/foo', {
-			templateUrl: '/partials/foo.html'
-		}).when('/about', {
-			templateUrl: '/partials/about.html'
-		}).otherwise({
-			redirectTo: '/list'
+App.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
+	$urlRouterProvider.otherwise("/list");
+	$stateProvider
+		.state('list', {
+		    url: '/list',
+		    templateUrl: '/partials/list.html'
+		})
+		.state('foo', {
+		    url: '/foo',
+		    templateUrl: '/partials/foo.html'
+		})
+		.state('about', {
+		    url: '/about',
+		    templateUrl: '/partials/about.html'
 		});
-		return $locationProvider.html5Mode(false);
-	}
-]);
+	return $locationProvider.html5Mode(false);
+});

@@ -19,6 +19,7 @@ html(lang='en', ng-app='twoffline')
         enabled: true
       };
     script(src='/js/vendor.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.0.1/angular-ui-router.min.js')
     script(src='/js/partials.js')
     script(src='/js/app.js')
   body(ng-controller='AppCtrl')
@@ -34,7 +35,7 @@ html(lang='en', ng-app='twoffline')
             .nav-collapse
               div(ng-include="'/partials/nav.html'")
       .container.main-content
-        div(ng-view)
+        div(ui-view)
       .push
 
     footer.footer
