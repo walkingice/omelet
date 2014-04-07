@@ -14,6 +14,7 @@ Chinese Omelet is one kind of my favorite breakfast.
 
 To install needed package by commands
 
+    $ gem install sass
     $ npm install
     $ node_modules/.bin/bower install
 
