@@ -1,7 +1,23 @@
-ul.nav
-  li(ng-class="getClass('/list')")
-    a(ng-href='#/list') List
-  li(ng-class="getClass('/foo')")
-    a(ng-href='#/foo') Foo
-  li(ng-class="getClass('/about')")
-    a(ng-href='#/about') About
+.wrapper
+  header#top.navbar-inverse.navbar.navbar-static-top.bs-docs-nav(rols="banner")
+    .container
+      a.navbar-brand(href="/") Angular Brunch Seed
+      .navbar-header
+        button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target=".bs-navbar-collapse")
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      nav.navbar-collapse.bs-navbar-collapse.collapse(role="navigation",style="height: 1px;")
+        ul.nav.navbar-nav
+          li
+            a(ng-href='#/list') List
+          li
+            a(ng-href='#/foo') Foo
+          li
+            a(ng-href='#/about') About
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href="https://github.com") Github
+
+

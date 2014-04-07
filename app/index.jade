@@ -23,20 +23,10 @@ html(lang='en', ng-app='twoffline')
     script(src='/js/partials.js')
     script(src='/js/app.js')
   body(ng-controller='AppCtrl')
-    .wrapper
-      .navbar.navbar-static-top
-        .navbar-inner
-          .container
-            button.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/').brand Angular Brunch Seed
-            .nav-collapse
-              div(ng-include="'/partials/nav.html'")
-      .container.main-content
-        div(ui-view)
-      .push
+    include partials/nav
+    .container.main-content
+      div(ui-view)
+    .push
 
     footer.footer
       .container
