@@ -10,8 +10,6 @@
   ],
   "dependencies": {
     "console-polyfill": "~0.1.0",
-    "bootstrap-sass": "~3.0.2",
-    "bootstrap-less-themes": "git://github.com/angular-brunch/bootstrap-less-themes.git",
     "angular-bootstrap": "~0.10.0",
     "angular": "1.2.16",
     "angular-sanitize": "1.2.16",
