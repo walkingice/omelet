@@ -1,0 +1,42 @@
+@import "~bootstrap/less/bootstrap";
+
+@bg: white;
+@gutter: 10px;
+@grey: #bdc3c7;
+
+// overwrite bootstrap variable
+@navbar-default-bg: black;
+@navbar-default-link-hover-color: white;
+@navbar-default-link-hover-bg: @grey;
+@navbar-default-link-active-bg: white;
+@navbar-default-link-color: white;
+
+.white {
+    color: white;
+}
+
+#nav {
+    ul {
+        li {
+            float: left;
+        }
+    }
+}
+
+#nav-logo {
+    height: 100%;
+}
+
+#app {
+    margin-top: @navbar-height;
+}
+
+body {
+    background-color: @bg;
+    // from http://subtlepatterns.com/
+    background-image: url("/imgs/symphony.png");
+    background-repeat: repeat;
+    padding-bottom: 100px;
+}
+
+@import "./_animations";
